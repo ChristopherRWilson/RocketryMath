@@ -44,7 +44,6 @@ namespace Units
 
     public enum VariableTypes
     {
-        SolveFor,
         Area,
         Distance,
         Mass,

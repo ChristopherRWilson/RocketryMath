@@ -1,0 +1,11 @@
+﻿<!-- © 2017 Chris Wilson. All rights reserved. -->
+
+@model RocketryMath.Interfaces.IFormula
+S
+<h1>@Model.FormulaName()</h1>
+@Html.Raw(Model.FormulaDescription())
+<br />
+<div>$$@Model.FormulaMarkup()$$</div>
+<br />
+@Html.Raw(ViewBag.TextExplanation)
+<a href="@ViewBag.SolveUrl" class="btn btn-info btn-lg">Solve this</a>

@@ -1,0 +1,24 @@
+﻿<!-- © 2017 Chris Wilson. All rights reserved. -->
+
+@model RocketryMath.Interfaces.IFormula
+S
+<h1>@Model.FormulaName()</h1>
+@Html.Raw(Model.FormulaDescription())
+<br />
+<div class="container-fluid">
+    <div class="row">
+        @using (Html.BeginForm("Solved", "Formula"))
+        {
+            <div class="col-lg-7">
+                @Html.EditorFor(x => x.VariableList)
+                <button type="submit" class="btn btn-lg btn-success" id="submit"><i class="fa fa-check" aria-hidden="true"></i> Solve This</button>
+                <button type="submit" class="btn btn-lg btn-warning" id="submit"><i class="fa fa-remove" aria-hidden="true"></i> Clear values</button>
+            </div>
+        }
+        <div class="col-lg-5">
+            $$@Model.FormulaMarkup()$$
+        </div>
+    </div>
+</div>
+<br />
+<a href="@ViewBag.ExplainUrl" class="btn btn-info btn-sm"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Explain this</a>

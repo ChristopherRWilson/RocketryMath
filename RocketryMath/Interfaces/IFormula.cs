@@ -7,9 +7,13 @@ namespace RocketryMath.Interfaces
     {
         #region Public Methods
 
+        List<Variable> VariableList { get; set; }
+
         string FormulaCategory();
 
         string FormulaDescription();
+
+        string FormulaExplanation();
 
         string FormulaMarkup();
 

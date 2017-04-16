@@ -41,6 +41,11 @@ namespace RocketryMath
                 new StyleBundle("~/Content/css").Include(
                     "~/Content/bootstrap.css",
                     "~/Content/site.css"));
+
+            bundles.Add(
+                new StyleBundle("~/bundles/fontawesome").Include(
+                    "~/Content/font-awesome.min.css"
+                ));
         }
 
         #endregion Public Methods
