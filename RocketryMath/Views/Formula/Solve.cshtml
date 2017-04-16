@@ -2,7 +2,7 @@
 
 @model RocketryMath.Interfaces.IFormula
 S
-<h1>@Model.FormulaName()</h1>
+<h1 class="formulaH1">@Model.FormulaName()</h1>
 @Html.Raw(Model.FormulaDescription())
 <br />
 <div class="container-fluid">
@@ -21,4 +21,8 @@ S
     </div>
 </div>
 <br />
+<div class="bs-callout bs-callout-success">
+    <h4>Solved Value</h4>
+    $$@Model.FormulaMarkupSolved()$$
+</div>
 <a href="@ViewBag.ExplainUrl" class="btn btn-info btn-sm"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Explain this</a>

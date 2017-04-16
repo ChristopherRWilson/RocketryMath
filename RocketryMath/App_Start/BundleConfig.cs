@@ -40,7 +40,8 @@ namespace RocketryMath
             bundles.Add(
                 new StyleBundle("~/Content/css").Include(
                     "~/Content/bootstrap.css",
-                    "~/Content/site.css"));
+                    "~/Content/site.css",
+                    "~/Content/callouts.css"));
 
             bundles.Add(
                 new StyleBundle("~/bundles/fontawesome").Include(
