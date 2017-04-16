@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<!-- © 2017 Chris Wilson. All rights reserved. -->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,7 +8,6 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -37,8 +38,78 @@
         </footer>
     </div>
 
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config(
+        {
+        displayAlign: "center",
+        extensions: ["tex2jax.js"],
+        menuSettings:
+        {
+        zoom: "Click",
+        CTRL: false,
+        ALT: false,
+        CMD: false,
+        Shift: false,
+        zscale: "250%",
+        font: "Auto",
+        context: "MathJax",
+        mpContext: false,
+        mpMouse: false,
+        texHints: true
+        },
+        TeX:
+        {
+        Macros:
+        {
+        RR: '{\\bf R}',
+        bold: ['{\\bf #1}', 1]
+        }
+        },
+        errorSettings:
+        {
+        message: ["[", ["MathProcessingError", "Math Processing Error"], "]"],
+        style: {
+        color: "#CC0000",
+        "font-style": "italic"
+        }
+        },
+        jax: ["input/TeX", "output/SVG"],
+        tex2jax:
+        {
+        inlineMath:
+        [
+        ['$', '$'],
+        ['\\(', '\\)']
+        ],
+        displayMath:
+        [
+        ['$$', '$$'],
+        ['\\[', '\\]']
+        ],
+        preview: ["[math]"],
+        processEscapes: true
+        },
+        "SVG":
+        {
+        blacker: 10,
+        font: "TeX",
+        scale: 100,
+        },
+        MathMenu:
+        {
+        delay: 150,
+        helpURL: "http://www.mathjax.org/help-v2/user/",
+        showRenderer: true,
+        showMathPlayer: true,
+        showFontMenu: true,
+        showContext: false,
+        showDiscoverable: true,
+        }
+        });
+    </script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/mathjax")
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketryMath", "RocketryMath\RocketryMath.csproj", "{9324E8D2-3965-485A-9F37-FAB55D53220D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Units", "Units\Units.csproj", "{5B5B21F2-AC22-4AA8-83BB-8615CB8AD0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsUnitTest", "UnitsUnitTest\UnitsUnitTest.csproj", "{592F89B0-13BC-4E33-B823-5A615B9AD0CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9324E8D2-3965-485A-9F37-FAB55D53220D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9324E8D2-3965-485A-9F37-FAB55D53220D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9324E8D2-3965-485A-9F37-FAB55D53220D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5B21F2-AC22-4AA8-83BB-8615CB8AD0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5B21F2-AC22-4AA8-83BB-8615CB8AD0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5B21F2-AC22-4AA8-83BB-8615CB8AD0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5B21F2-AC22-4AA8-83BB-8615CB8AD0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592F89B0-13BC-4E33-B823-5A615B9AD0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592F89B0-13BC-4E33-B823-5A615B9AD0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592F89B0-13BC-4E33-B823-5A615B9AD0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592F89B0-13BC-4E33-B823-5A615B9AD0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

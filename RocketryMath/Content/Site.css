@@ -1,4 +1,9 @@
-﻿body {
+﻿<!-- © 2017 Chris Wilson. All rights reserved. -->
+
+<!--
+
+© 2017 Chris Wilson. All rights reserved. -->
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -9,8 +14,8 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
 */
 .dl-horizontal dt {
     white-space: normal;
@@ -21,4 +26,10 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.MathJax_SVG_Display {
+    font-size: 2em;
+    font-weight: bolder;
 }
