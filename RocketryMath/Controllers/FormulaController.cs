@@ -1,5 +1,4 @@
 ﻿using RocketryMath.Interfaces;
-using RocketryMath.Models.Formulas;
 using System.Reflection;
 using System.Web.Mvc;
 
@@ -42,7 +41,7 @@ namespace RocketryMath.Controllers
             return View(formulaType);
         }
 
-        public ActionResult Solved(GhostParachuteSize formula)
+        public ActionResult Solved(IFormula formula)
         {
             return View("Solve", formula);
         }
