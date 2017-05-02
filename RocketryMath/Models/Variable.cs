@@ -1,7 +1,4 @@
-﻿// © 2017 Chris Wilson. All Rights Reserved
-// Created: 04/15/2017 7:08 PM
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 using Units;

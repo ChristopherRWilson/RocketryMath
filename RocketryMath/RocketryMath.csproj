@@ -190,6 +190,8 @@
     <Compile Include="Controllers\FormulaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\StrengthController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,6 +212,8 @@
     <Content Include="Content\callouts.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\navigation.css" />
+    <Content Include="Content\shop-item.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -2089,10 +2093,23 @@
     <Content Include="Scripts\MathJax\fonts\HTML-CSS\Asana-Math\eot\AsanaMathJax_DoubleStruck-Regular.eot" />
     <Content Include="Scripts\MathJax\fonts\HTML-CSS\Asana-Math\eot\AsanaMathJax_Arrows-Regular.eot" />
     <Content Include="Scripts\MathJax\fonts\HTML-CSS\Asana-Math\eot\AsanaMathJax_Alphabets-Regular.eot" />
-    <Content Include="Views\GhostParachuteSize\Index.cshtml" />
     <Content Include="Views\Formula\Solve.cshtml" />
     <Content Include="Views\Formula\Explain.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Variable.cshtml" />
+    <Content Include="Views\Shared\RocketMaterials.cshtml" />
+    <Content Include="Views\Strength\Data_StyreneGlueTest.cshtml" />
+    <Content Include="Views\Strength\Fins_3PointBend.cshtml" />
+    <Content Include="Views\Strength\Fins_FinCanTest.cshtml" />
+    <Content Include="Views\Strength\Fins_Other.cshtml" />
+    <Content Include="Views\Strength\Fins_Tension.cshtml" />
+    <Content Include="Views\Strength\Glue_EpoxyFin.cshtml" />
+    <Content Include="Views\Strength\Hardware_MotorRetainers.cshtml" />
+    <Content Include="Views\Strength\Hardware_Other.cshtml" />
+    <Content Include="Views\Navigation\Menu.cshtml" />
+    <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\Shared\_Layout_default.cshtml" />
+    <Content Include="Views\Shared\_SideNavigation.cshtml" />
+    <Content Include="Views\Shared\_RocketMaterialsNavigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

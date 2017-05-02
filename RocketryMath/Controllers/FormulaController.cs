@@ -1,7 +1,4 @@
-﻿// © 2017 Chris Wilson. All Rights Reserved
-// Created: 04/15/2017 8:20 PM
-
-using RocketryMath.Interfaces;
+﻿using RocketryMath.Interfaces;
 using RocketryMath.Models.Formulas;
 using System.Reflection;
 using System.Web.Mvc;

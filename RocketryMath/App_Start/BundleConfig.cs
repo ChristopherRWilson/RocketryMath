@@ -1,7 +1,4 @@
-﻿// © 2017 Chris Wilson. All Rights Reserved
-// Created: 04/14/2017 1:48 PM
-
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace RocketryMath
 {
@@ -41,7 +38,9 @@ namespace RocketryMath
                 new StyleBundle("~/Content/css").Include(
                     "~/Content/bootstrap.css",
                     "~/Content/site.css",
-                    "~/Content/callouts.css"));
+                    "~/Content/callouts.css",
+                    "~/Content/navigation.css",
+                    "~/Content/shop-site.css"));
 
             bundles.Add(
                 new StyleBundle("~/bundles/fontawesome").Include(

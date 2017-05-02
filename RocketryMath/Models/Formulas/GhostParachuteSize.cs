@@ -1,9 +1,7 @@
-﻿// © 2017 Chris Wilson. All Rights Reserved
-// Created: 04/15/2017 12:47 AM
-
-using RocketryMath.Interfaces;
+﻿using RocketryMath.Interfaces;
 using System;
 using System.Collections.Generic;
+
 using Units;
 
 namespace RocketryMath.Models.Formulas
