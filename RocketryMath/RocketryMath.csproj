@@ -2111,7 +2111,6 @@
     <Content Include="Views\Shared\_Layout_default.cshtml" />
     <Content Include="Views\Shared\_SideNavigation.cshtml" />
     <Content Include="Views\Shared\_RocketMaterialsNavigation.cshtml" />
-    <Content Include="Views\Shared\VariableEditor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

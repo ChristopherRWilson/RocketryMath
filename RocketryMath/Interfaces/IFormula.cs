@@ -7,8 +7,6 @@ namespace RocketryMath.Interfaces
     {
         #region Public Methods
 
-        List<Variable> VariableList { get; set; }
-
         string FormulaCategory();
 
         string FormulaDescription();
@@ -27,9 +25,9 @@ namespace RocketryMath.Interfaces
 
         List<string> FormulaTags();
 
-        double Solve();
+        string Solve();
 
-        List<Variable> Variables();
+        List<Variable> Variables { get; set; }
 
         #endregion Public Methods
     }

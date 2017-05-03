@@ -5,10 +5,13 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-1">
+            @Html.HiddenFor(x => x.VariableName)
+            @*@Html.HiddenFor(x => x.VariableUnit)*@
+            @Html.HiddenFor(x => x.VariableType)
             <strong>@Html.DisplayFor(x => x.VariableName)</strong>
         </div>
         @if (Model.SolveFor)
-            {
+        {
             <div class="col-sm-8">
                 @Html.DisplayFor(x => x.VariableDescription)
                 @Html.HiddenFor(x => x.Value)
@@ -19,12 +22,12 @@
             <div class="col-sm-6">
                 @Html.DisplayFor(x => x.VariableDescription)
             </div>
-                <div class="col-sm-2">
-                    @Html.TextBoxFor(x => x.Value, null, new { @class = "form-control" })
-                </div>
+            <div class="col-sm-2">
+                @Html.TextBoxFor(x => x.Value, null, new {@class = "form-control"})
+            </div>
         }
         <div class="col-sm-3">
-            @Html.DropDownListFor(x => x.VariableUnit, new SelectList(Model.AvailableUnits), new { @class = "form-control" })
+            @Html.DropDownListFor(x => x.VariableUnit, new SelectList(Model.AvailableUnits), new {@class = "form-control"})
         </div>
     </div>
 </div>

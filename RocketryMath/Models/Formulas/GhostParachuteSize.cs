@@ -1,7 +1,6 @@
 ﻿using RocketryMath.Interfaces;
 using System;
 using System.Collections.Generic;
-
 using Units;
 
 namespace RocketryMath.Models.Formulas
@@ -10,18 +9,33 @@ namespace RocketryMath.Models.Formulas
     {
         #region Public Methods
 
-        private List<Variable> workingVariables;
-
         public GhostParachuteSize()
         {
-            workingVariables = Variables();
+            Variables = new List<Variable>()
+            {
+                new Variable()
+                {
+                    VariableName = "D",
+                    VariableDescription = "Ghost drogue diameter",
+                    VariableType = VariableTypes.Distance,
+                    SolveFor = true
+                },
+                new Variable()
+                {
+                    VariableName = "d",
+                    VariableDescription = "Diameter of rocket tube",
+                    VariableType = VariableTypes.Distance
+                },
+                new Variable()
+                {
+                    VariableName = "L",
+                    VariableDescription = "Length of rocket tube",
+                    VariableType = VariableTypes.Distance
+                }
+            };
         }
 
-        List<Variable> IFormula.VariableList
-        {
-            get { return workingVariables; }
-            set { workingVariables = value; }
-        }
+        public List<Variable> Variables { get; set; }
 
         public string FormulaCategory()
         {
@@ -47,8 +61,8 @@ namespace RocketryMath.Models.Formulas
         public string FormulaMarkupSolved()
         {
             var answer = Solve();
-            var diameter = Variables().Find(m => m.VariableName == "d").Value;
-            var length = Variables().Find(m => m.VariableName == "L").Value;
+            var diameter = Variables.Find(m => m.VariableName == "d").Value;
+            var length = Variables.Find(m => m.VariableName == "L").Value;
 
             return $"{answer} = \\sqrt{{\\frac{{4({length})({diameter})}}{{\\pi}}}}";
         }
@@ -79,38 +93,17 @@ namespace RocketryMath.Models.Formulas
             };
         }
 
-        public double Solve()
+        public string Solve()
         {
-            var diameter = Variables().Find(m => m.VariableName == "d").Value;
-            var length = Variables().Find(m => m.VariableName == "L").Value;
+            var solveFor = Variables.Find(m => m.VariableName == "D");
+            var diameter = Variables.Find(m => m.VariableName == "d");
+            var length = Variables.Find(m => m.VariableName == "L");
 
-            return Math.Sqrt((4 * length * diameter) / Math.PI);
-        }
+            var value = Math.Sqrt((4 * length.Value * diameter.Value) / Math.PI);
 
-        public List<Variable> Variables()
-        {
-            return new List<Variable>()
-            {
-                new Variable()
-                {
-                    VariableName = "D",
-                    VariableDescription = "Ghost drogue diameter",
-                    VariableType = VariableTypes.Distance,
-                    SolveFor = true
-                },
-                new Variable()
-                {
-                    VariableName = "d",
-                    VariableDescription = "Diameter of rocket tube",
-                    VariableType = VariableTypes.Distance
-                },
-                new Variable()
-                {
-                    VariableName = "L",
-                    VariableDescription = "Length of rocket tube",
-                    VariableType = VariableTypes.Distance
-                }
-            };
+            //var valueUnit = new Units.Distance(value, solveFor.VariableType);
+
+            return $"{value} {solveFor.VariableUnit}";
         }
 
         #endregion Public Methods

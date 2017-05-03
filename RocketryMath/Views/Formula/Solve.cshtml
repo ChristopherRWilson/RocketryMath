@@ -7,17 +7,12 @@
 <br />
 <div class="container-fluid">
     <div class="row">
-        @using (Html.form.BeginForm("Solved", "Formula", FormMethod.Post))
+        @using (Html.BeginForm("Solved", "Formula", FormMethod.Post))
         {
             @Html.HiddenFor(m => m.GetType().AssemblyQualifiedName)
 
             <div class="col-lg-7">
-                @Html.EditorFor(x => x.VariableList)
-
-                @*@foreach (var item in Model.VariableList)
-                    {
-                        Html.RenderPartial("VariableEditor", item);
-                    }*@
+                @Html.EditorFor(m => m.Variables)
 
                 <hr />
 
@@ -33,6 +28,8 @@
 <br />
 <div class="bs-callout bs-callout-success">
     <h4>Solved Value</h4>
+    @Model.Solve()
+    <hr />
     $$@Model.FormulaMarkupSolved()$$
 </div>
 <a href="@ViewBag.ExplainUrl" class="btn btn-info btn-sm"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Explain this</a>
