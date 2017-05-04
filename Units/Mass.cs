@@ -63,7 +63,7 @@ namespace Units
 
         public double ToGrams() => _value;
 
-        public double ToKilograms() => _value / 1000;
+        public double ToKilograms() => _value * .001;
 
         public double ToOunces() => _value * 0.035274;
 

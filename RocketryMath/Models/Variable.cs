@@ -32,6 +32,9 @@ namespace RocketryMath.Models
 
                     case VariableTypes.Volume:
                         return Enum.GetNames(typeof(VolumeTypes));
+
+                    case VariableTypes.Pressure:
+                        return Enum.GetNames(typeof(PressureTypes));
                 }
 
                 return null;

@@ -1,7 +1,4 @@
-﻿// © 2017 Chris Wilson. All Rights Reserved
-// Created: 04/14/2017 2:21 PM
-
-namespace Units
+﻿namespace Units
 {
     public enum AreaTypes
     {
@@ -35,6 +32,18 @@ namespace Units
         Pounds
     }
 
+    public enum PressureTypes
+    {
+        Atmospheres,
+        Bars,
+        InchesMercury,
+        KilogramsSquareCentimeter,
+        NewtonsSquareCentimeter,
+        NewtonsSquareMeter,
+        Pascals,
+        PSI
+    }
+
     public enum TemperatureTypes
     {
         Celcius,
@@ -47,6 +56,7 @@ namespace Units
         Area,
         Distance,
         Mass,
+        Pressure,
         Temperature,
         Velocity,
         Volume

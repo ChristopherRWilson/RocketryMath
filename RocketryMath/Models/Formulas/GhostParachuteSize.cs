@@ -103,7 +103,7 @@ namespace RocketryMath.Models.Formulas
 
             //var valueUnit = new Units.Distance(value, solveFor.VariableType);
 
-            return $"{value} {solveFor.VariableUnit}";
+            return $"{value:0.000} {solveFor.VariableUnit}";
         }
 
         #endregion Public Methods

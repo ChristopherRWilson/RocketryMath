@@ -6,8 +6,8 @@
     <div class="row">
         <div class="col-sm-1">
             @Html.HiddenFor(x => x.VariableName)
-            @*@Html.HiddenFor(x => x.VariableUnit)*@
             @Html.HiddenFor(x => x.VariableType)
+            @Html.HiddenFor(x => x.SolveFor)
             <strong>@Html.DisplayFor(x => x.VariableName)</strong>
         </div>
         @if (Model.SolveFor)

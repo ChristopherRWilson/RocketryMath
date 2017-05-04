@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MassTest.cs" />
     <Compile Include="DistanceTest.cs" />
+    <Compile Include="PressureTest.cs" />
     <Compile Include="VelocityTest.cs" />
   </ItemGroup>
   <ItemGroup>

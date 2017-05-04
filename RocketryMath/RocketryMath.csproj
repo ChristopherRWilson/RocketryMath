@@ -198,6 +198,7 @@
     <Compile Include="IFormulaBinder.cs" />
     <Compile Include="Interfaces\IFormula.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Formulas\EjectionChargeCalculator.cs" />
     <Compile Include="Models\Formulas\GhostParachuteSize.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
